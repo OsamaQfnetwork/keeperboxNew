@@ -75,15 +75,8 @@
 
           </div>
       </div>
-    </div>
     <!-- -------- END HEADER 7 w/ text and video ------- -->
     <div class="mt-5">
       <!-- Section with four info areas left & one card right with image and waves -->
     </div>
-
-    <!--   Core JS Files   -->
-    <!--   Core JS Files   -->
-
-  </body>
-</html>
 @endsection

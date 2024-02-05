@@ -40,10 +40,4 @@
       </section>
     </div>
 
-
-    <!--   Core JS Files   -->
-    <!--   Core JS Files   -->
-
-  </body>
-</html>
 @endsection

@@ -37,5 +37,5 @@ Route::get('/how_works', [how_worksController::class, 'How_works']);
 Route::get('/keeperbox', [keeperboxController::class, 'Keeper']);
 Route::get('/signin_old', [signin_oldController::class, 'Sign_old']);
 Route::get('/signin', [signinController::class, 'Signin']);
-Route::get('/signup', [signupController::class, 'Signup']);
+Route::get('/signup', [signupController::class, 'Signup'])->name('signup');
 Route::get('/userDashboard', [userDashboardController::class, 'UserDashboard']);

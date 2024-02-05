@@ -16,7 +16,7 @@
       Keeper Box | Parents easiest way to preserve & share their child’s
       artwork. Available at School - Check now. KeeperBox.co
     </title>
-    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="{{asset('/slider.css')}}" />
     <!--     Fontawesome     -->
     <link href="{{asset('/assets/fontawesome-pro/css/all.min.css')}}" rel="stylesheet" />
     <!--     Fonts and icons     -->
@@ -25,7 +25,7 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="{{asset('/style.css')}}" />
     <!-- Nucleo Icons -->
     <link href="{{asset('/assets/css/nucleo-icons.css')}}" rel="stylesheet" />
     <link href="{{asset('/assets/css/nucleo-svg.css')}}" rel="stylesheet" />
@@ -127,7 +127,7 @@
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
                               style="font-family: sans-serif"
-                              href="for_parents"
+                              href="{{url('for_parents')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -137,7 +137,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="for_school"
+                              href="{{url('for_school')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -152,7 +152,7 @@
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
                               style="font-family: sans-serif"
-                              href="for_parents"
+                              href="{{url('for_parents')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -162,7 +162,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                            href="for_school"
+                            href="{{url('for_school')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -199,7 +199,7 @@
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
                               style="font-family: sans-serif"
-                              href="aboutus"
+                              href="{{url('aboutus')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -209,7 +209,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="how_works"
+                              href="{{url('how_works')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -219,7 +219,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="becomeProvider"
+                              href="{{url('becomeProvider')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -234,7 +234,7 @@
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
                               style="font-family: sans-serif"
-                              href="aboutus"
+                              href="{{url('aboutus')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -244,7 +244,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="how_works"
+                              href="{{url('how_works')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -255,7 +255,7 @@
 
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="becomeProvider.html"
+                              href="{{url('becomeProvider')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -290,7 +290,7 @@
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
                               style="font-family: sans-serif"
-                              href="signin"
+                              href="{{url('signin')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -300,7 +300,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="signin"
+                              href="{{url('signin')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -316,7 +316,7 @@
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
                               style="font-family: sans-serif"
-                              href="signin"
+                              href="{{url('signin')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -326,7 +326,7 @@
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
                             <a
-                              href="signin"
+                              href="{{url('signin')}}"
                               class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                             >
                               <span style="font-family: sans-serif"
@@ -342,7 +342,7 @@
 
                   <li class="nav-item list-group-item border-0 mx-1 p-0">
                     <a
-                    href="getStarted"
+                    href="{{url('signup')}}"
                     class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                   >
                     <button

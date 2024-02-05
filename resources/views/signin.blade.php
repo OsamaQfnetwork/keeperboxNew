@@ -189,7 +189,7 @@
                             "
                           >
                             Don't have an account?
-                            <a href="singup.html">
+                            <a href="{{ route('signup') }}">
                               <span
                                 style="color: blue; font-family: sans-serif"
                                 class=""
@@ -322,7 +322,7 @@
                             "
                           >
                             Don't have an account?
-                            <a href="singup.html">
+                            <a href="{{ route('signup') }}">
                               <span
                                 style="color: blue; font-family: sans-serif"
                                 class=""

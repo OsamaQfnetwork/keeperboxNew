@@ -492,17 +492,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
 
     <!-- -------- END HEADER 7 w/ text and video ------- -->
     <div class="mt-5">
@@ -512,7 +501,4 @@
     <!--   Core JS Files   -->
     <!--   Core JS Files   -->
 
-
-  </body>
-</html>
 @endsection
