@@ -380,7 +380,9 @@
         </div>
       </div>   -->
 
-      <div id="parents" class="tab-content">
+      {{-- empty how_it_works --}}
+
+      {{-- <div id="parents" class="tab-content">
         <!-- Content related to Parents goes here -->
      <div style="margin-top: -430px" class="row justify-space-between py-0">
       <h3 class="text-center"
@@ -823,5 +825,5 @@
 
 
   </body>
-</html>
+</html> --}}
 @endsection

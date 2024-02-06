@@ -57,7 +57,7 @@
             font-weight: 500;
             line-height: 24px; /* 171.429% */
             letter-spacing: -0.2px;">Contact phone</h1>
-             <a href="findprovider.html">
+             <a href="{{('findprovider')}}">
             <button style="color: #FFF;
             font-feature-settings: 'clig' off, 'liga' off;
             font-family: Poppins;

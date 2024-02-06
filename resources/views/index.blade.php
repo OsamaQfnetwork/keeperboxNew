@@ -41,7 +41,7 @@
 
           <div class="left_icon">
             <img
-              src="{{url('images/icons/left-arrow.svg"')}}
+              src="{{url('images/icons/left-arrow.svg')}}"
               alt=""
               class="leftsli_icon"
             />

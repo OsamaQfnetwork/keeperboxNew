@@ -1,7 +1,3 @@
-{{-- @extends('layouts.main')
-
-@section('main_container') --}}
-
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
@@ -20,7 +16,7 @@
       Keeper Box | Parents easiest way to preserve & share their child’s
       artwork. Available at School - Check now. KeeperBox.co
     </title>
-    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="{{asset('/assets/slider.css')}}" />
     <!--     Fontawesome     -->
     <link href="{{asset('/assets/fontawesome-pro/css/all.min.css')}}" rel="stylesheet" />
     <!--     Fonts and icons     -->
@@ -29,7 +25,7 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="{{asset('style.css')}}" />
     <!-- Nucleo Icons -->
     <link href="{{asset('assets/css/nucleo-icons.css')}}" rel="stylesheet" />
     <link href="{{asset('assets/css/nucleo-svg.css')}}" rel="stylesheet" />
@@ -124,7 +120,7 @@
                   data-bs-toggle="pill"
                   href="#parents"
                   role="tab"
-                  aria-controls="parents"
+                   aria-controls="parents"
                   aria-selected="true"
                   >Parents</a
                 >
@@ -156,7 +152,7 @@
                             />
                           </div>
                           <div class="text-center mt-3">
-                            <img src="{{url('images/keeper.png')}}" alt="" />
+                            <img src="{{url('/images/keeper.png')}}" alt="" />
                           </div>
                         </div>
                       </div>
@@ -189,7 +185,7 @@
                             "
                           >
                             Don't have an account?
-                            <a href="{{ route('signup') }}">
+                            <a href="{{('signup')}}">
                               <span
                                 style="color: blue; font-family: sans-serif"
                                 class=""
@@ -322,7 +318,7 @@
                             "
                           >
                             Don't have an account?
-                            <a href="{{ route('signup') }}">
+                            <a href="{{('signup')}}">
                               <span
                                 style="color: blue; font-family: sans-serif"
                                 class=""
@@ -367,7 +363,7 @@
                               >
                             </div>
                             <div class="text-center">
-                              <a href="userDashboard">
+                              <a href="{{('userDashboard')}}">
                                 <button
                                   style="
                                     font-family: sans-serif;
@@ -650,6 +646,45 @@
       </div>
     </div> -->
 
+    <script src="{{asset('/slider.js')}}"></script>
+<script
+  src="{{asset('/assets/js/core/popper.min.js')}}"
+  type="text/javascript"
+></script>
+<script
+  src="{{asset('/assets/js/core/bootstrap.min.js')}}"
+  type="text/javascript"
+></script>
+<script src="{{asset('/assets/js/plugins/perfect-scrollbar.min.js')}}"></script>
+<!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
+<script src="{{asset('/assets/js/plugins/typedjs.js')}}"></script>
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="{{asset('/assets/js/plugins/countup.min.js')}}"></script>
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="{{asset('/assets/js/plugins/rellax.min.js')}}"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="{{asset('/assets/js/plugins/tilt.min.js')}}"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="{{asset('/assets/js/plugins/choices.min.js')}}"></script>
+<!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+<script src="{{asset('/assets/js/plugins/parallax.min.js')}}"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script
+  src="{{asset('/assets/js/plugins/nouislider.min.js')}}"
+  type="text/javascript"
+></script>
+<!--  Plugin for the blob animation -->
+<script
+  src="{{asset('/assets/js/plugins/anime.min.js')}}"
+  type="text/javascript"
+></script>
+    <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+    <script
+      src="./assets/js/material-kit-pro.min.js?v=3.0.4"
+      type="text/javascript"
+    ></script>
   </body>
 </html>
 

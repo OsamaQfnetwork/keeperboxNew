@@ -73,7 +73,7 @@
                     <div class="row">
 
                        <div class="col-md-12 text-center">
-                           <img style="width: 200px; height: 150px;" src="images/icons/bx.png" alt="">
+                           <img style="width: 200px; height: 150px;" src="{{url('images/icons/bx.png')}}" alt="">
                            <h1 class="mt-5" style="color: #212C3C;
                            font-feature-settings: 'clig' off, 'liga' off;
                            font-family: Gluten;
@@ -96,7 +96,7 @@
                             Your child Creates “Keepers” that you want to preserve
                             </h1>
                             <div class="text-center mt-4">
-                              <a href="keeperbox.html">
+                              <a href="{{('keeperbox')}}">
                                 <button style="border-radius: 32px;
                                 background: #283570; display: inline-flex;
                                 padding: 14px 35px;
@@ -130,7 +130,7 @@
                 <div class="row">
 
                    <div class="col-md-12 text-center">
-                       <img style="width: 160px; height: 140px;" class="text-center" src="images/icons/bxx.png" alt="">
+                       <img style="width: 160px; height: 140px;" class="text-center" src="{{('images/icons/bxx.png')}}" alt="">
                     <h1 class="mt-5" style="color: #212C3C;
                     font-feature-settings: 'clig' off, 'liga' off;
                     font-family: Gluten;
@@ -153,7 +153,7 @@
                        Your child Creates “Keepers” that you want to preserve
                         </h1>
                         <div class="text-center mt-4">
-                          <a href="singup.html">
+                          <a href="{{('signup')}}">
                             <button style="
                             font-feature-settings: 'clig' off, 'liga' off;
                             font-family: Poppins;

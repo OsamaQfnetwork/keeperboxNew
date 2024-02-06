@@ -58,7 +58,7 @@ class="mt-5"
 </footer>
 
 
-<script src="slider.js"></script>
+<script src="{{asset('/slider.js')}}"></script>
 <script
   src="{{asset('/assets/js/core/popper.min.js')}}"
   type="text/javascript"
@@ -132,3 +132,9 @@ class="mt-5"
     }
   }
 </script>
+    <script
+    src="{{('/assets/js/plugins/multiplestep.js')}}"
+    type="text/javascript"
+    ></script>
+  </body>
+</html>

@@ -78,7 +78,7 @@
             class="navbar navbar-expand-lg border-radius-xl top-0 z-index-fixed  position-absolute my-3 py-2 start-0 end-0 mx-4"
           >
             <div class="container-fluid px-2">
-              <a class="main_logo" href="#">
+              <a class="main_logo" href="{{('/')}}">
                 <img src="{{url('images/main-logo.svg')}}" alt="" />
               </a>
 
@@ -342,7 +342,7 @@
 
                   <li class="nav-item list-group-item border-0 mx-1 p-0">
                     <a
-                    href="{{url('signup')}}"
+                    href="{{url('getStarted')}}"
                     class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
                   >
                     <button

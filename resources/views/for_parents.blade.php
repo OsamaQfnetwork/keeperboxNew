@@ -257,7 +257,7 @@
 
                <div class="row justify-content-center mt-5">
                 <div class="col-md-3">
-                  <a href="getStarted.html">
+                  <a href="{{('getStarted')}}">
                  <button style="color: #FFF;
                  font-feature-settings: 'clig' off, 'liga' off;
                  font-family: Poppins;

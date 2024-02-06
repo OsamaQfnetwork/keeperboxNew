@@ -1,0 +1,59 @@
+.cslider {
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    display: flex;
+
+}
+
+
+
+.header_content {
+
+    display: none;
+
+    flex: 0 0 100%;
+
+    opacity: 0;
+
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+
+
+.left_icon,
+
+.right_icon {
+
+    position: absolute;
+
+    top: 45%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    z-index: 1;
+
+}
+
+
+
+.left_icon {
+
+    left: 3%;
+
+}
+
+
+
+.right_icon {
+
+    right: 3%;
+
+}
