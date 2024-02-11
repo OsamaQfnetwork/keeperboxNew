@@ -265,7 +265,7 @@
             return;
         }*/
         $.ajax({
-            url: "http://127.0.0.2:8000/api/register",
+            url: "https://provider.keeperbox.co/api/register",
             type: "POST",
             headers: {
                 "Accept": "application/json"
