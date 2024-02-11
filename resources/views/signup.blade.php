@@ -84,8 +84,8 @@
 
               <div class="col-12 col-md-12 col-sm-12 mt-0 mt-sm-0">
                   <div class="input-group input-group-outline my-0">
-                    <label style="font-family: sans-serif;" class="form-label">Organization Name</label>
-                    <input type="text" class="form-control">
+                    <label for="company" style="font-family: sans-serif;" class="form-label">Organization Name</label>
+                    <input name="company" id="company" type="text" class="form-control">
                   </div>
                 </div>
           </div>
@@ -111,7 +111,7 @@
           <div class="multisteps-form__content">
            <div class="row mt-4 px-5">
             <div class="col-12 col-md-12 col-sm-12 dropdown">
-              <button  style="width: 100%;
+              {{--<button  style="width: 100%;
               height: 46px;
               font-family: sans-serif;
               flex-shrink: 0; border-radius: 16px;
@@ -122,7 +122,15 @@
                 <li><a class="dropdown-item" href="#">Organization-1</a></li>
                 <li><a class="dropdown-item" href="#">Organization-2</a></li>
                 <li><a class="dropdown-item" href="#">Organization-3</a></li>
-              </ul>
+              </ul>--}}
+                <div class="input-group input-group-outline my-0">
+                    <select class="form-control" id="organization_type" name="organization_type">
+                    <option value="" selected>Choose...</option>
+                    <option value="school">School</option>
+                    <option value="organization">Organization</option>
+                    <option value="store">Store</option>
+                    </select>
+                </div>
       </div>
            </div>
 
@@ -146,8 +154,8 @@
           <div class="row mt-4 px-5">
             <div class="col-md-12">
              <div class="input-group input-group-outline my-0">
-                 <label style="font-family: sans-serif;" class="form-label">Organization Address</label>
-                 <input type="text" class="form-control">
+                 <label for="location" style="font-family: sans-serif;" class="form-label">Organization Address</label>
+                 <input type="text" name="location" id="location" class="form-control">
                </div>
             </div>
 
@@ -171,22 +179,28 @@
             </div>
         <div class="multisteps-form__content">
           <div class="row mt-4 px-5">
-            <div class="col-md-12">
+            <div class="col-md-6">
              <div class="input-group input-group-outline my-0">
-                 <label style="font-family: sans-serif;" class="form-label">Manager Full Name</label>
-                 <input type="text" class="form-control">
+                 <label for="first_name" style="font-family: sans-serif;" class="form-label">Manager First Name</label>
+                 <input type="text" name="first_name" id="first_name" class="form-control">
+               </div>
+            </div>
+              <div class="col-md-6">
+             <div class="input-group input-group-outline my-0">
+                 <label style="font-family: sans-serif;" for="last_name" class="form-label">Manager Last Name</label>
+                 <input type="text" name="last_name" id="last_name" class="form-control">
                </div>
             </div>
             <div class="col-md-12 mt-2">
               <div class="input-group input-group-outline my-0">
-                  <label style="font-family: sans-serif;" class="form-label">Manager Email</label>
-                  <input type="text" class="form-control">
+                  <label for="email" style="font-family: sans-serif;" class="form-label">Manager Email</label>
+                  <input type="email" id="email" name="email" class="form-control">
                 </div>
              </div>
              <div class="col-md-12 mt-2">
               <div class="input-group input-group-outline my-0">
-                  <label style="font-family: sans-serif;" class="form-label">Select a password</label>
-                  <input type="password" class="form-control">
+                  <label for="password" style="font-family: sans-serif;" class="form-label">Select a password</label>
+                  <input type="password" name="password" id="password" class="form-control">
                 </div>
              </div>
 
@@ -194,15 +208,10 @@
 
         <div class="button-row d-flex mt-4">
         <button style="background-color: #1f2b65;font-family: sans-serif;" class="btn text-white mb-0 js-btn-prev" type="button" title="Prev">Back</button>
-        <button style="background-color: #1f2b65;font-family: sans-serif;" class="btn text-white ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+        <button style="background-color: #1f2b65;font-family: sans-serif;" class="btn text-white ms-auto mb-0 " onclick="submitForm()" type="button" title="Submit">Submit</button>
         </div>
         </div>
           </div>
-
-
-
-
-
 
           </form>
           </div>
@@ -211,85 +220,90 @@
           </div>
 
         </div>
-      </div>
       <!-- -------- END HEADER 7 w/ text and video ------- -->
       <div class="mt-5">
         <!-- Section with four info areas left & one card right with image and waves -->
       </div>
 
-      <script src="{{asset('/slider.js')}}"></script>
-<script
-  src="{{asset('/assets/js/core/popper.min.js')}}"
-  type="text/javascript"
-></script>
-<script
-  src="{{asset('/assets/js/core/bootstrap.min.js')}}"
-  type="text/javascript"
-></script>
-<script src="{{asset('/assets/js/plugins/perfect-scrollbar.min.js')}}"></script>
-<!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
-<script src="{{asset('/assets/js/plugins/typedjs.js')}}"></script>
-<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
-<script src="{{asset('/assets/js/plugins/countup.min.js')}}"></script>
-<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
-<script src="{{asset('/assets/js/plugins/rellax.min.js')}}"></script>
-<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
-<script src="{{asset('/assets/js/plugins/tilt.min.js')}}"></script>
-<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
-<script src="{{asset('/assets/js/plugins/choices.min.js')}}"></script>
-<!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
-<script src="{{asset('/assets/js/plugins/parallax.min.js')}}"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script
-  src="{{asset('/assets/js/plugins/nouislider.min.js')}}"
-  type="text/javascript"
-></script>
-<!--  Plugin for the blob animation -->
-<script
-  src="{{asset('/assets/js/plugins/anime.min.js')}}"
-  type="text/javascript"
-></script>
-<!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-<script
-  src="{{asset('/assets/js/material-kit-pro.min.js?v=3.0.4')}}"
-  type="text/javascript"
-></script>
+
 <script type="text/javascript">
-  if (document.getElementById("state1")) {
-    const countUp = new CountUp(
-      "state1",
-      document.getElementById("state1").getAttribute("countTo")
-    );
-    if (!countUp.error) {
-      countUp.start();
-    } else {
-      console.error(countUp.error);
+    function  submitForm(){
+        console.log("clicked");
+        var company = $("#company").val();
+        var organization_type = $("#organization_type").val();
+        var location = $("#location").val();
+        var first_name = $("#first_name").val();
+        var last_name = $("#last_name").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+        var data = {
+            company: company,
+            organization_type: organization_type,
+            location: location,
+            first_name: first_name,
+            last_name: last_name,
+            email: email,
+            password: password
+        }
+        console.log(data);
+       /* if(company == "" || organization_type == "" || location == "" || first_name == "" || last_name == "" || email == "" || password == ""){
+            Swal.fire({
+                title: 'Error!',
+                text: 'All fields are required!',
+                icon: 'error',
+                confirmButtonText: 'Close'
+            })
+            return;
+        }
+        if(!email.includes("@") || !email.includes(".")){
+            Swal.fire({
+                title: 'Error!',
+                text: 'Invalid email address!',
+                icon: 'error',
+                confirmButtonText: 'Close'
+            })
+            return;
+        }*/
+        $.ajax({
+            url: "http://127.0.0.2:8000/api/register",
+            type: "POST",
+            headers: {
+                "Accept": "application/json"
+            },
+            data: data,
+            success: function(response){
+                if(response.errors){
+                    $.each(response.errors, function(key, value){
+                        Swal.fire({
+                            title: 'Error!',
+                            text: value,
+                            icon: 'error',
+                            confirmButtonText: 'Close'
+                        })
+                    })
+                }
+
+                if(response.errors_company){
+                    Swal.fire({
+                        title: 'Error!',
+                        text: response.errors_company,
+                        icon: 'error',
+                        confirmButtonText: 'Close'
+                    })
+                }
+                if(response.success){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'User created successfully!',
+                        icon: 'success',
+                        confirmButtonText: 'Close'
+                    })
+                    console.log(response.redirect_url);
+                    window.open(response.redirect_url, '_blank');
+                }
+            }
+        })
     }
-  }
-  if (document.getElementById("state2")) {
-    const countUp1 = new CountUp(
-      "state2",
-      document.getElementById("state2").getAttribute("countTo")
-    );
-    if (!countUp1.error) {
-      countUp1.start();
-    } else {
-      console.error(countUp1.error);
-    }
-  }
-  if (document.getElementById("state3")) {
-    const countUp2 = new CountUp(
-      "state3",
-      document.getElementById("state3").getAttribute("countTo")
-    );
-    if (!countUp2.error) {
-      countUp2.start();
-    } else {
-      console.error(countUp2.error);
-    }
-  }
 </script>
 
 
